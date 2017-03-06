@@ -92,8 +92,8 @@ RUN make install
 WORKDIR /ACME
 RUN mkdir scratch
 # ACME directory has to be in build context
-COPY . .
-RUN mkdir -p cime/utils/git
+# COPY . .
+# RUN mkdir -p cime/utils/git
 WORKDIR /ACME/cime/utils/git
 RUN wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 RUN wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
